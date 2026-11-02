@@ -1,0 +1,14 @@
+# WEDE5020POE Search Engine Optimization Directives
+# Target: All Search Engine Crawlers
+
+User-agent: *
+Allow: /index.html
+Allow: /style.css
+Allow: /script.js
+
+# Prevent indexing of developer workspaces or staging nodes
+Disallow: /private/
+Disallow: /node_modules/
+
+# Explicitly declare the sitemap entry route path to guide crawling indexers
+Sitemap: http://localhost:8000/sitemap.xml
